@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta God of War</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Encuesta Dgitaa uerra</h1>
+  <p id="description">Comparte tu experiencia y opinión sobre las diferentes versiones del juego **God of War**.</p>
+
+  <form id="survey-form">
+
+    <div class="container">
+      <div class="marker">
+        <img src="https://media.revistagq.com/photos/613b43731df3ece1388a2f67/16:9/w_960,c_limit/God-of-War-Ragnarok-Featured-image.jpeg" alt="God of War Ragnarok" />
+        <p><strong>God of War Ragnarok (2022)</strong></p>
+        <p>La última entrega de la saga, donde Kratos y su hijo Atreus enfrentan el fin del mundo.</p>
+      </div>
+
+   
+      <div class="marker">
+        <img src="https://static.giga.de/wp-content/uploads/2017/06/1_Kratos_God-of-War-fc80008000ffff_840x0.jpg" alt="God of War (2018)" />
+        <p><strong>God of War (2018)</strong></p>
+        <p>El regreso de Kratos en una nueva aventura, explorando mitología nórdica y su relación con Atreus.</p>
+      </div>
+
+    
+      <div class="marker">
+        <img src="https://i.blogs.es/49c99e/god-of-war-prime/1024_2000.png" alt="God of War III" />
+        <p><strong>God of War II (2010)</strong></p>
+        <p>Kratos busca venganza en un épico enfrentamiento contra los dioses del Olimpo.</p>
+      </div>
+
+
+      <div class="marker">
+        <img src="https://m.media-amazon.com/images/I/91VKfyGGkYL._SL1500_.jpg" alt="God of War II" />
+        
+      </div>
+    </div>
+
+
+    <fieldset>
+      <legend>Información personal</legend>
+      <label for="name" id="name-label">Nombre:</label>
+      <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+
+      <label for="email" id="email-label">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+
+      <label for="number" id="number-label">Edad:</label>
+      <input type="number" id="number" name="age" min="18" max="99" required placeholder="Ingresa tu edad">
+    </fieldset>
+
+    <fieldset>
+      <legend>Opinión sobre los juegos</legend>
+      <label for="dropdown">¿Cuál es tu versión favorita de God of War?</label>
+      <select id="dropdown" name="favorite-version">
+        <option value="god-of-war-ragnarok">God of War Ragnarok</option>
+        <option value="god-of-war-2018">God of War (2018)</option>
+        <option value="god-of-war-iii">God of War III</option>
+        <option value="god-of-war-ii">God of War II</option>
+      </select>
+
+      <label>Elige tu personaje favorito:</label>
+      <input type="radio" id="kratos" name="character" value="Kratos">
+      <label for="kratos">Kratos</label><br>
+      <input type="radio" id="atreus" name="character" value="Atreus">
+      <label for="atreus">Atreus</label><br>
+
+      <label for="checkbox">Elige tus características favoritas del juego:</label><br>
+      <input type="checkbox" id="combat" name="features" value="Combat">
+      <label for="combat">Combate</label><br>
+      <input type="checkbox" id="story" name="features" value="Story">
+      <label for="story">Historia</label><br>
+      <input type="checkbox" id="exploration" name="features" value="Exploration">
+      <label for="exploration">Exploración</label><br>
+
+      <label for="comments">Comentarios adicionales:</label><br>
+      <textarea id="comments" name="comments" placeholder="Escribe tus comentarios..."></textarea>
+    </fieldset>
+
+
+    <button id="submit" type="submit">Enviar Encuesta</button>
+  </form>
+</body>
+</html>
+
